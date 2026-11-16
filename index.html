@@ -9,6 +9,9 @@
   <meta name="author" content="Dave Brian Basler">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://davebasler.github.io/">
+  <link rel="alternate" hreflang="en" href="https://davebasler.github.io/">
+  <link rel="alternate" hreflang="de" href="https://davebasler.github.io/de/">
+  <link rel="alternate" hreflang="x-default" href="https://davebasler.github.io/">
 
   <!-- Google Search Console: paste your verification tag here, then submit sitemap.xml -->
   <!-- <meta name="google-site-verification" content="REPLACE_ME"> -->
@@ -28,6 +31,7 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Dave Brian Basler — AI &amp; Machine Learning Engineer">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_CH">
   <meta property="profile:first_name" content="Dave">
   <meta property="profile:last_name" content="Basler">
   <meta name="twitter:card" content="summary_large_image">
@@ -38,6 +42,7 @@
 
   <link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/instrument-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="assets/img/portrait-800.webp" imagesrcset="assets/img/portrait-400.webp 400w, assets/img/portrait-640.webp 640w, assets/img/portrait-800.webp 800w" imagesizes="(max-width: 760px) 8.5rem, (max-width: 960px) 13rem, 21rem">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add("js")</script>
 
@@ -47,6 +52,7 @@
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "url": "https://davebasler.github.io/",
+    "inLanguage": "en",
     "dateModified": "2026-11-16",
     "mainEntity": {
       "@type": "Person",
@@ -59,7 +65,7 @@
       "jobTitle": "Service Owner AI",
       "description": "AI and machine learning engineer building and operating production LLM, speech and document AI systems for enterprise software.",
       "url": "https://davebasler.github.io/",
-      "image": "https://davebasler.github.io/assets/og-image.png",
+      "image": "https://davebasler.github.io/assets/img/portrait-800.jpg",
       "address": { "@type": "PostalAddress", "addressCountry": "CH" },
       "worksFor": {
         "@type": "Organization",
@@ -97,15 +103,21 @@
         <span class="brand-mark" aria-hidden="true">DB</span>
         <span class="brand-name">Dave Brian Basler</span>
       </a>
-      <nav aria-label="Sections">
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#toolbox">Toolbox</a></li>
-          <li><a class="nav-cta" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-right">
+        <nav aria-label="Sections">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#toolbox">Toolbox</a></li>
+            <li><a class="nav-cta" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="./" hreflang="en" lang="en" aria-current="page" aria-label="English">EN</a>
+          <a href="de/" hreflang="de" lang="de" aria-label="Deutsch">DE</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -116,27 +128,32 @@
 
       <h1 id="hero-title" class="hero-title rise rise-1">Dave Brian<br><span class="hero-title-last">Basler</span></h1>
 
-      <div class="hero-grid">
-        <div class="hero-copy rise rise-2">
-          <p class="lead">
-            I build and operate production AI systems — LLM applications, speech services and
-            document intelligence — for enterprise software. Engineer by trade,
-            <em>researcher by training.</em>
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#contact">Get in touch</a>
-            <a class="btn btn-ghost" href="https://ch.linkedin.com/in/davebasler" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-ghost" href="https://github.com/davebasler" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
+      <figure class="portrait">
+        <picture>
+          <source type="image/webp" srcset="assets/img/portrait-400.webp 400w, assets/img/portrait-640.webp 640w, assets/img/portrait-800.webp 800w" sizes="(max-width: 760px) 8.5rem, (max-width: 960px) 13rem, 21rem">
+          <img src="assets/img/portrait-800.jpg" alt="Portrait of Dave Brian Basler" width="800" height="1000" fetchpriority="high">
+        </picture>
+      </figure>
 
-        <dl class="now rise rise-3">
-          <div><dt>Now</dt><dd>Service Owner AI at <strong>BSI</strong></dd></div>
-          <div><dt>Focus</dt><dd>LLM platforms, speech &amp; document AI</dd></div>
-          <div><dt>Research</dt><dd>eHealth for ComBaCaL, University Hospital Basel</dd></div>
-          <div><dt>Based in</dt><dd>Switzerland</dd></div>
-        </dl>
+      <div class="hero-copy rise rise-2">
+        <p class="lead">
+          I build and operate production AI systems — LLM applications, speech services and
+          document intelligence — for enterprise software. Engineer by trade,
+          <em>researcher by training.</em>
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="https://ch.linkedin.com/in/davebasler" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="https://github.com/davebasler" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
+
+      <dl class="now rise rise-3">
+        <div><dt>Now</dt><dd>Service Owner AI at <strong>BSI</strong></dd></div>
+        <div><dt>Focus</dt><dd>LLM platforms, speech &amp; document AI</dd></div>
+        <div><dt>Research</dt><dd>eHealth for ComBaCaL, University Hospital Basel</dd></div>
+        <div><dt>Based in</dt><dd>Switzerland</dd></div>
+      </dl>
 
       <ul class="facts rise rise-4">
         <li><span class="fact-value">Since 2026</span><span class="fact-label">Service Owner of BSI’s company-wide AI platform</span></li>
@@ -223,7 +240,7 @@
                 <li>Responsible for operating, maintaining and evolving the company-wide AI platform</li>
                 <li>Run and improve production AI services used by multiple enterprise customers</li>
                 <li>Develop LLM-based applications, speech services (TTS/STT), embeddings and AI document processing</li>
-                <li>Drive architecture, deployment, reliability and scalability of AI infrastructure and backend services</li>
+                <li>Contribute to the architecture, deployment, reliability and scalability of AI infrastructure and backend services</li>
               </ul>
             </div>
           </li>
@@ -378,7 +395,7 @@
               <span class="pub-year">2021</span>
               <div>
                 <p class="pub-title">Development of a trans-diagnostic mobile app to support intersession processes in psychotherapy</p>
-                <p class="pub-meta">Jinashvili G, <b>Basler D</b>, et al.</p>
+                <p class="pub-meta">Conference · <i>52nd Annual International Conference of the Society for Psychotherapy Research</i> · Jinashvili G, <b>Basler D</b>, et al.</p>
               </div>
             </li>
           </ol>

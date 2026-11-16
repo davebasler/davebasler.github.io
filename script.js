@@ -55,6 +55,13 @@
     document.querySelectorAll("main section[id]").forEach(function (s) { navObserver.observe(s); });
   }
 
+  // --- Language switch: stay in the same section when switching EN <-> DE --
+  document.querySelectorAll(".lang-switch a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      if (location.hash) a.setAttribute("href", a.getAttribute("href").split("#")[0] + location.hash);
+    });
+  });
+
   // --- Print / "Save as PDF" should include the full publication list -----
   window.addEventListener("beforeprint", function () {
     document.querySelectorAll("details").forEach(function (d) { d.open = true; });
