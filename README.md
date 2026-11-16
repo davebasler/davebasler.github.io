@@ -31,6 +31,16 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
+## After changing style.css or script.js
+
+Browsers cache these files. Bump the version in the `?v=` query string
+(`style.css?v=YYYYMMDD`, `script.js?v=YYYYMMDD`) in `index.html`, `de/index.html` and `404.html`.
+Returning visitors then get the new file instead of a stale one:
+
+```bash
+sed -i "s/?v=[0-9]*/?v=$(date +%Y%m%d)/g" index.html de/index.html 404.html
+```
+
 ## Editing content
 
 Everything lives in `index.html`. Each section is marked by a comment such as `<!-- ===== 03 EXPERIENCE ===== -->`.
