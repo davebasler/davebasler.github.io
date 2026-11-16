@@ -100,9 +100,9 @@
         <nav aria-label="Abschnitte">
           <ul class="nav-list">
             <li><a href="#about">Über mich</a></li>
+            <li><a href="#work">Projekte</a></li>
             <li><a href="#experience">Erfahrung</a></li>
             <li><a href="#research">Forschung</a></li>
-            <li><a href="#toolbox">Toolbox</a></li>
             <li><a class="nav-cta" href="#contact">Kontakt</a></li>
           </ul>
         </nav>
@@ -193,11 +193,12 @@
       <div class="section-label"><span class="num">02</span> Fokus</div>
       <div class="section-body">
         <h2 id="focus-title" class="section-title reveal">Woran ich arbeite</h2>
+        <p class="section-intro reveal">Bei BSI verantworte ich eine zentrale KI-Plattform, auf der unsere Produkte und Enterprise-Kunden aufbauen. Die Arbeit ist grösstenteils intern – das deckt sie ab.</p>
         <ol class="focus-grid">
           <li class="focus-item reveal">
             <h3>LLM-Anwendungen &amp; Plattform</h3>
             <p>Entwicklung und Integration von LLM-basierten Anwendungen und Diensten auf einer gemeinsamen Enterprise-KI-Plattform – von Inference und Serving bis zu den APIs, auf denen Produkte aufbauen.</p>
-            <p class="tags">LLMs · Inference &amp; Serving · REST APIs</p>
+            <p class="tags">LLMs · Inference&nbsp;&amp;&nbsp;Serving · REST&nbsp;APIs</p>
           </li>
           <li class="focus-item reveal">
             <h3>Sprachtechnologie</h3>
@@ -212,15 +213,68 @@
           <li class="focus-item reveal">
             <h3>KI-Infrastruktur &amp; Zuverlässigkeit</h3>
             <p>Architektur, Deployment und Skalierung von KI-Backends: containerisierte Dienste, GitOps-Delivery, Autoscaling, Lasttests und Monitoring.</p>
-            <p class="tags">Kubernetes · Argo CD · k6</p>
+            <p class="tags">Kubernetes · Argo&nbsp;CD · k6</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- ============ 03 ERFAHRUNG ============ -->
+    <!-- ============ 03 PROJEKTE ============ -->
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-label"><span class="num">03</span> Projekte</div>
+      <div class="section-body">
+        <h2 id="work-title" class="section-title reveal">Ausgewählte Projekte</h2>
+        <p class="section-intro reveal">Projekte, die ich öffentlich zeigen kann – von klinischer Software im ländlichen Lesotho bis zu Conversational AI.</p>
+
+        <article class="case case-featured reveal" aria-labelledby="case-combacal">
+          <p class="case-meta"><span>Highlight</span><span>Universitätsspital Basel · seit 2023</span></p>
+          <h3 id="case-combacal" class="case-title">ComBaCaL-App</h3>
+          <p class="case-sub">Klinische Entscheidungsunterstützung, mit der Community Health Workers im ländlichen Lesotho Bluthochdruck und Diabetes behandeln</p>
+          <p class="case-text">Eine Offline-first-Tablet-Applikation auf Basis des Open-Source-Frameworks Community Health Toolkit. Sie führt Laien-Gesundheitsfachpersonen durch Screening, Diagnose, Therapiebeginn und -anpassung, Überweisung und Nachsorge – Aufgaben, die sonst medizinischem Fachpersonal vorbehalten sind – und verwaltet eine Forschungskohorte von über 14’000 Personen in 103 Dörfern, inklusive elektronischer Einwilligung.</p>
+          <p class="case-role"><span>Rolle</span> Entwicklung der eHealth-Applikation, gemeinsam mit dem klinischen Forschungsteam</p>
+          <ul class="case-stats">
+            <li><span class="stat-value">103</span><span class="stat-label">Community Health Workers nutzen die App im Feld</span></li>
+            <li><span class="stat-value">58&#8239;%</span><span class="stat-label">Blutdruckkontrolle mit der App-gestützten Versorgung, gegenüber 48&#8239;% in Gesundheitszentren (<i>Nature Medicine</i>)</span></li>
+            <li><span class="stat-value">95&#8239;%</span><span class="stat-label">der Health Workers sind mit der App zufrieden (Usability-Score 75.6)</span></li>
+          </ul>
+          <p class="tags">Community&nbsp;Health&nbsp;Toolkit · Offline-first · Klinische&nbsp;Entscheidungsunterstützung · eConsent</p>
+          <p class="case-links">
+            <a href="https://www.combacal.org/" target="_blank" rel="noopener">combacal.org <span aria-hidden="true">↗</span></a>
+            <a href="https://doi.org/10.1038/s41591-026-04208-w" target="_blank" rel="noopener">Studie in Nature Medicine <span aria-hidden="true">↗</span></a>
+            <a href="https://doi.org/10.64898/2026.11.03.26367148" target="_blank" rel="noopener">Usability-Studie (Preprint) <span aria-hidden="true">↗</span></a>
+          </p>
+        </article>
+
+        <div class="cases">
+          <article class="case reveal" aria-labelledby="case-agent">
+            <p class="case-meta"><span>Masterarbeit</span><span>Universität Zürich</span></p>
+            <h3 id="case-agent" class="case-title">Pädagogischer Conversational Agent</h3>
+            <p class="case-sub">Ein digitaler Coach für Corporate-Identity-Trainings in der öffentlichen Verwaltung</p>
+            <p class="case-text">Masterarbeit im UZH-Forschungsprojekt «Improving Public Service with Conversational A.I.», gemeinsam mit der Hochschule für öffentliche Verwaltung und Finanzen Ludwigsburg und zwei deutschen Städten. Ich habe einen Conversational Agent konzipiert, umgesetzt und evaluiert, der das Training an die einzelnen Mitarbeitenden anpasst, und seine Wirkung auf die Kommunikation mit den Mitarbeitenden untersucht.</p>
+            <p class="case-role"><span>Rolle</span> Konzeption, Umsetzung und Evaluation · Note&nbsp;5.5&nbsp;/&nbsp;6</p>
+            <p class="tags">Conversational&nbsp;AI · Personalisierung · Nutzerstudie</p>
+            <p class="case-links">
+              <a href="https://www.ifi.uzh.ch/en/imrg/research/completed-projects/erreichbarkeitstrainer.html" target="_blank" rel="noopener">Forschungsprojekt <span aria-hidden="true">↗</span></a>
+            </p>
+          </article>
+          <article class="case reveal" aria-labelledby="case-evalis">
+            <p class="case-meta"><span>Bachelorarbeit</span><span>Universität Zürich</span></p>
+            <h3 id="case-evalis" class="case-title">Intersession-App <span class="arrow">→</span> EVALIS</h3>
+            <p class="case-sub">Eine Smartphone-Begleitung für die Psychotherapie zwischen den Sitzungen</p>
+            <p class="case-text">Den Grossteil ihrer Therapie verbringen Patientinnen und Patienten ausserhalb des Therapieraums. Mit dem Lehrstuhl für Klinische Psychologie mit Schwerpunkt Psychotherapieforschung der UZH habe ich den ersten Prototyp einer App gebaut, die hilft, Therapieinhalte zwischen den Sitzungen umzusetzen und zu reflektieren. Er wurde an der internationalen SPR-Konferenz 2021 vorgestellt und zu EVALIS weiterentwickelt, das die UZH mit angehenden Psychotherapeutinnen und Psychotherapeuten evaluiert hat.</p>
+            <p class="case-role"><span>Rolle</span> Konzept und erster Prototyp · Note&nbsp;5.75&nbsp;/&nbsp;6</p>
+            <p class="tags">Mobile&nbsp;App · eHealth · Psychotherapieforschung</p>
+            <p class="case-links">
+              <a href="https://www.psychologie.uzh.ch/dam/jcr:62f3a112-4a3c-4815-b643-fffcd10475ab/Flyer_EVALIS_27.09.22.pdf" target="_blank" rel="noopener">EVALIS-Studienflyer (PDF) <span aria-hidden="true">↗</span></a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 ERFAHRUNG ============ -->
     <section class="section wrap" id="experience" aria-labelledby="experience-title">
-      <div class="section-label"><span class="num">03</span> Erfahrung</div>
+      <div class="section-label"><span class="num">04</span> Erfahrung</div>
       <div class="section-body">
         <h2 id="experience-title" class="section-title reveal">Erfahrung</h2>
 
@@ -297,15 +351,16 @@
                 <li>Individuelle Webanwendungen, E-Commerce-Lösungen und WordPress-Plugins (PHP)</li>
                 <li>Kundenprojekte von der Konzeption bis zum Deployment</li>
               </ul>
+              <p class="entry-links"><span>Ausgewählte Websites</span> <a href="https://feuerwerk-oftringen.ch/" target="_blank" rel="noopener">Feuerwerk Oftringen</a>, <a href="https://babyschild.ch/" target="_blank" rel="noopener">Babyschild.ch</a> (Webshop), <a href="https://hotimmo.ch/" target="_blank" rel="noopener">Hotimmo</a>, <a href="https://movimento-mele.ch/" target="_blank" rel="noopener">Movimento</a></p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- ============ 04 FORSCHUNG ============ -->
+    <!-- ============ 05 FORSCHUNG ============ -->
     <section class="section wrap" id="research" aria-labelledby="research-title">
-      <div class="section-label"><span class="num">04</span> Forschung</div>
+      <div class="section-label"><span class="num">05</span> Forschung</div>
       <div class="section-body">
         <h2 id="research-title" class="section-title reveal">Forschung &amp; Publikationen</h2>
         <p class="section-intro reveal">
@@ -399,9 +454,9 @@
       </div>
     </section>
 
-    <!-- ============ 05 TOOLBOX ============ -->
+    <!-- ============ 06 TOOLBOX ============ -->
     <section class="section wrap" id="toolbox" aria-labelledby="toolbox-title">
-      <div class="section-label"><span class="num">05</span> Toolbox</div>
+      <div class="section-label"><span class="num">06</span> Toolbox</div>
       <div class="section-body">
         <h2 id="toolbox-title" class="section-title reveal">Toolbox</h2>
         <dl class="skills">
@@ -448,9 +503,9 @@
       </div>
     </section>
 
-    <!-- ============ 06 AUSBILDUNG ============ -->
+    <!-- ============ 07 AUSBILDUNG ============ -->
     <section class="section wrap" id="education" aria-labelledby="education-title">
-      <div class="section-label"><span class="num">06</span> Ausbildung</div>
+      <div class="section-label"><span class="num">07</span> Ausbildung</div>
       <div class="section-body">
         <h2 id="education-title" class="section-title reveal">Ausbildung</h2>
 
@@ -460,7 +515,7 @@
             <div class="entry-body">
               <h3 class="entry-title">MSc Informatik</h3>
               <p class="entry-org">Universität Zürich · Software Systems, Nebenfach Data Science</p>
-              <p class="thesis"><span>Masterarbeit</span> Development and evaluation of a pedagogical conversational agent with personalization abilities and its effect on the communication with employees in a corporate identity training program <span class="grade">Note 5.5 / 6</span></p>
+              <p class="thesis"><span>Masterarbeit</span> Development and evaluation of a pedagogical conversational agent with personalization abilities and its effect on the communication with employees in a corporate identity training program <span class="grade">Note&nbsp;5.5&nbsp;/&nbsp;6</span></p>
             </div>
           </li>
           <li class="entry reveal">
@@ -468,7 +523,7 @@
             <div class="entry-body">
               <h3 class="entry-title">BSc Informatik</h3>
               <p class="entry-org">Universität Zürich · Software Systems, Nebenfach Wirtschaftsinformatik</p>
-              <p class="thesis"><span>Bachelorarbeit</span> Development of an app prototype to support intersession activity during psychotherapy <span class="grade">Note 5.75 / 6</span></p>
+              <p class="thesis"><span>Bachelorarbeit</span> Development of an app prototype to support intersession activity during psychotherapy <span class="grade">Note&nbsp;5.75&nbsp;/&nbsp;6</span></p>
             </div>
           </li>
         </ol>
@@ -493,9 +548,9 @@
       </div>
     </section>
 
-    <!-- ============ 07 KONTAKT ============ -->
+    <!-- ============ 08 KONTAKT ============ -->
     <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
-      <div class="section-label"><span class="num">07</span> Kontakt</div>
+      <div class="section-label"><span class="num">08</span> Kontakt</div>
       <div class="section-body">
         <h2 id="contact-title" class="contact-title reveal">Sprechen wir.</h2>
         <p class="section-intro reveal">
