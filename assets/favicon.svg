@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #141413; } .fg { fill: #f5f3ee; } .dot { fill: #c62a1f; }
+    @media (prefers-color-scheme: dark) { .bg { fill: #f0ede6; } .fg { fill: #0f0f0e; } .dot { fill: #ff5d4a; } }
+  </style>
+  <circle class="bg" cx="32" cy="32" r="32"/>
+  <text class="fg" x="31" y="43" text-anchor="middle" font-family="'Instrument Serif', Georgia, 'Times New Roman', serif" font-size="32" letter-spacing="-0.5">DB</text>
+  <circle class="dot" cx="49" cy="18" r="4"/>
+</svg>

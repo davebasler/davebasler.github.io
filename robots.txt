@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davebasler.github.io/sitemap.xml
