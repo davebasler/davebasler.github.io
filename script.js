@@ -55,6 +55,11 @@
     document.querySelectorAll("main section[id]").forEach(function (s) { navObserver.observe(s); });
   }
 
+  // --- Print / "Save as PDF" should include the full publication list -----
+  window.addEventListener("beforeprint", function () {
+    document.querySelectorAll("details").forEach(function (d) { d.open = true; });
+  });
+
   // --- Keep time-based numbers current ------------------------------------
   var now = new Date();
   document.querySelectorAll("[data-year]").forEach(function (el) {

@@ -573,6 +573,53 @@ a.pub-title span { color: var(--accent); font-family: var(--sans); font-size: .8
 .pub-meta { margin-top: .5rem; font-size: .9rem; color: var(--ink-3); }
 .pub-meta b { color: var(--ink); font-weight: 600; }
 
+.pubs-heading {
+  margin-top: 2.5rem;
+  font-family: var(--mono);
+  font-size: .72rem;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.pubs-heading + .pubs { margin-top: 1rem; }
+
+.pubs-more { margin-top: 1.25rem; }
+.pubs-more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .55rem 1rem .55rem .8rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: .875rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: border-color .2s var(--ease);
+}
+.pubs-more summary::-webkit-details-marker { display: none; }
+.pubs-more summary:hover { border-color: var(--ink); }
+.pm-icon { position: relative; width: .7rem; height: .7rem; }
+.pm-icon::before, .pm-icon::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 1.5px;
+  margin-top: -.75px;
+  background: var(--accent);
+  transition: transform .3s var(--ease);
+}
+.pm-icon::after { transform: rotate(90deg); }
+.pubs-more[open] .pm-icon::after { transform: rotate(0deg); }
+.pm-open, .pubs-more[open] .pm-closed { display: none; }
+.pubs-more[open] .pm-open { display: inline; }
+.pubs-more[open] summary { margin-bottom: .5rem; }
+.pubs-compact { margin-top: 1rem; }
+.pubs-compact .pub { padding: 1.15rem 0; }
+.pubs-compact .pub-title { font-size: clamp(1.1rem, 1.6vw, 1.25rem); letter-spacing: .008em; }
+
 .more { margin-top: 1.75rem; }
 .more a {
   font-size: .9375rem;
@@ -721,5 +768,5 @@ a.pub-title span { color: var(--accent); font-family: var(--sans); font-size: .8
   .section { break-inside: avoid-page; margin-top: 2.5rem; }
   .entry, .pub, .focus-item { break-inside: avoid; }
   .section-label { position: static; }
-  a.pub-title span, .cl-arrow { display: none; }
+  a.pub-title span, .cl-arrow, .pubs-more summary { display: none; }
 }
